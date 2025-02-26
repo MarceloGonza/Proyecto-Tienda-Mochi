@@ -3,6 +3,7 @@ import P1 from "../../assets/fanta1.png";
 import P2 from "../../assets/fanta2.png";
 import P3 from "../../assets/fanta3.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export const fadeUp = (delay) => {
   return {
@@ -21,7 +22,7 @@ export const fadeUp = (delay) => {
   };
 };
 
-const ProductsData = [
+export const ProductsData = [
   {
     id: 1,
     title: "Orange Fanta",
@@ -43,9 +44,20 @@ const ProductsData = [
     image: P3,
     delay: 1.1,
   },
+  {
+    id: 4,
+    title: "Cola Zero",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima",
+    image: P3,
+    delay: 1.1,
+  },
 ];
 
 const Products = () => {
+  // Solo mostramos los primeros 3 productos
+  const visibleProducts = ProductsData.slice(0, 3);
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gray-100 py-8">
       <div className="container py-14">
@@ -57,9 +69,9 @@ const Products = () => {
         >
           Our Products
         </motion.h1>
-        {/* card section */}
+        {/* card section - solo mostramos los primeros 3 productos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {ProductsData.map((item) => (
+          {visibleProducts.map((item) => (
             <motion.div
               variants={fadeUp(item.delay)}
               key={item.id}
@@ -69,7 +81,7 @@ const Products = () => {
             >
               <img
                 src={item.image}
-                alt=""
+                alt={item.title}
                 className="w-[100px] mb-4 hover:rotate-12 hover:scale-110 duration-300"
               />
               <div className="text-center space-y-2">
@@ -83,6 +95,15 @@ const Products = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Botón "More Products" */}
+        <div className="text-center mt-8">
+          <button
+            onClick={() => navigate("/all-products")}
+            className="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-80 duration-200"
+          >
+            More Products
+          </button>
         </div>
       </div>
     </div>

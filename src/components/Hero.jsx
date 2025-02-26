@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import Fanta1 from "../assets/fanta1.png";
 import Fanta2 from "../assets/fanta2.png";
@@ -6,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import AllProducts from "./AllProducts";
 
 const SlideRight = (delay) => {
   return {
@@ -66,6 +68,7 @@ const headphoneData = [
   },
 ];
 const Hero = () => {
+  const navigate = useNavigate();
   const [activeData, setActiveData] = React.useState(headphoneData[0]);
 
   const handleActiveData = (data) => {
@@ -146,8 +149,9 @@ const Hero = () => {
                     exit="exit"
                     style={{ color: activeData.bgColor }}
                     className="px-4 py-2 bg-white inline-block font-normal rounded-sm"
+                    onClick={() => navigate("/all-products")} // Cambié la ruta a "/all-products"
                   >
-                    Order Now
+                    More Products
                   </motion.button>
                 </UpdateFollower>
               </AnimatePresence>

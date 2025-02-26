@@ -13,8 +13,8 @@ const NavbarMenu = [
   },
   {
     id: 2,
-    title: "Categories",
-    link: "#",
+    title: "Products",
+    link: "./Our_products.jsx",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         {/* Menu section */}
         <div className="hidden md:block">
-          <ul className="flex items-center gap-4 relative z-40">
+          <ul className="flex items-center gap-4 relative z-40 hidden">
             {NavbarMenu.map((item) => (
               <li>
                 <UpdateFollower

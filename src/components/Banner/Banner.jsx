@@ -1,4 +1,3 @@
-import React from "react";
 import BannerImg from "../../assets/Banner/juice.png";
 import Splash from "../../assets/Banner/splash.png";
 import { motion } from "framer-motion";
