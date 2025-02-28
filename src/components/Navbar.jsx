@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../assets/logo.png";
 import { MdMenu } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
@@ -46,8 +45,8 @@ const Navbar = () => {
           <img src={Logo} alt="" className="max-w-[100px] invert" />
         </div>
         {/* Menu section */}
-        <div className="hidden md:block">
-          <ul className="flex items-center gap-4 relative z-40 hidden">
+        <div className="hidden sm:hidden">
+          <ul className="items-center gap-4 relative z-40 hidden">
             {NavbarMenu.map((item) => (
               <li>
                 <UpdateFollower
@@ -58,14 +57,7 @@ const Navbar = () => {
                     scale: 5,
                     mixBlendMode: "difference",
                   }}
-                >
-                  <a
-                    href={item.link}
-                    className="inline-block text-base font-semibold py-2 px-3 uppercase"
-                  >
-                    {item.title}
-                  </a>
-                </UpdateFollower>
+                ></UpdateFollower>
               </li>
             ))}
 
@@ -85,7 +77,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="hidden">
           <MdMenu className="text-4xl" />
         </div>
       </motion.div>

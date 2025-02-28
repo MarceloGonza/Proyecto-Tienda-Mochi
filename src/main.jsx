@@ -6,7 +6,6 @@ import { MouseFollower } from "react-mouse-follower";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MouseFollower />
     <App />
   </React.StrictMode>
 );
