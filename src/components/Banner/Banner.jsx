@@ -10,7 +10,7 @@ const Banner = () => {
         {/* Banner Image section */}
         <div className="relative">
           <motion.img
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -100, scale: 0.9 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
             src={BannerImg}
@@ -19,7 +19,7 @@ const Banner = () => {
           />
           <motion.img
             initial={{ opacity: 0, y: -100, rotate: -180, scale: 0 }}
-            whileInView={{ opacity: 1, y: 0, rotate: 0, scale: 1 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 0, scale: 1.5 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
             src={Splash}
             alt=""
@@ -35,7 +35,7 @@ const Banner = () => {
               whileInView="show"
               className="text-3xl lg:text-4xl font-semibold "
             >
-              Refresh Your World with Fanta
+              Sake: El Alma de Japón en una Botella
             </motion.h1>
             <motion.p
               variants={fadeUp(0.9)}
@@ -43,21 +43,21 @@ const Banner = () => {
               whileInView="show"
               className="text-gray-500"
             >
-              Fanta brings a burst of vibrant flavors and effervescent fun to
-              your day! Whether you're looking to quench your thirst with a
-              zesty orange, tangy lemon, or one of our many other fruit-inspired
-              flavors, Fanta is your go-to drink for a refreshing and exciting
-              experience. Dive into the world of Fanta and let every sip spark
-              your senses with its bold, bubbly, and refreshing taste!
+              El sake es una tradicional bebida alcohólica japonesa elaborada a
+              partir de la fermentación del arroz. Suave y aromático, su sabor
+              varía desde dulce hasta seco, con notas afrutadas o umami según su
+              tipo y proceso de elaboración. Perfecto para disfrutar caliente o
+              frío, el sake es una experiencia única que refleja la esencia de
+              la cultura japonesa.
             </motion.p>
-            <motion.button
+            <motion.div
               variants={fadeUp(1.1)}
               initial="hidden"
               whileInView="show"
-              className="!mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white duration-200"
+              className="!mt-10 border-2 border-primary text-primary px-4 py-2 rounded-md cursor-default inline-block"
             >
-              Buy Now
-            </motion.button>
+              $7,100 ARS
+            </motion.div>
           </div>
         </div>
       </div>

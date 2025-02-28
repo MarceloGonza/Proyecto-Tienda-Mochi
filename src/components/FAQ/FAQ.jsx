@@ -2,23 +2,23 @@ import React from "react";
 
 const faqData = [
   {
-    question: "What is Fanta?",
+    question: "¿Quienes somos?",
     answer:
-      "Fanta is a popular fruit-flavored carbonated soft drink created by The Coca-Cola Company.",
+      "Un emprendimiento de tres hermanos apasionados por la cultura asiática, queremos traerte de primera mano los mejores sabores que te trasnporten hacia esos lugares mágicos.",
   },
   {
-    question: "What flavors does Fanta offer?",
+    question: "¿Que tipo de bebidas y snacks ofrecen?",
     answer:
-      "Fanta offers a variety of flavors including orange, grape, pineapple, and more!",
+      "Nuestra tienda ofrece una variedad de snacks y bebidas asiáticas, incluyendo opciones vegetarianas y veganas. Nuestro inventario incluye productos de países como Japón, Corea, China, Tailandia y Vietnam.",
   },
   {
-    question: "Is Fanta gluten-free?",
-    answer:
-      "Yes, Fanta is gluten-free, making it suitable for those with gluten intolerance.",
+    question: "¿Ofrecen envío a domicilio?",
+    answer: "Por el momento no contamos con envío a domicilio.",
   },
   {
-    question: "How many calories are in a can of Fanta?",
-    answer: "A 12 oz can of Fanta Orange contains about 160 calories.",
+    question: "¿Puedo cancelar o cambiar mi pedido?",
+    answer:
+      "Por favor, contáctanos lo antes posible si necesitas cancelar o cambiar tu pedido. Nos esforzamos para mantener actualizado nuestro stock e inventario, pero se pueden hacer ajustes si es necesario.",
   },
 ];
 const FAQ = () => {
@@ -29,7 +29,7 @@ const FAQ = () => {
   return (
     <div className="max-w-2xl mx-auto mt-20 mb-28 px-8">
       <h1 className="text-3xl font-bold text-center pb-8">
-        Frequently Asked Questions
+        Preguntas frecuentes
       </h1>
 
       {faqData.map((item, index) => (

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebook,
   FaGoogle,
@@ -49,17 +48,9 @@ const Footer = () => {
             className="space-y-6"
           >
             <h1 className="text-3xl font-bold">Quick Links</h1>
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <ul className="space-y-2">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Contact us</li>
-                  <li>Privacy Policy</li>
-                </ul>
-              </div>
-              <div>
-                <ul className="space-y-2">
+            <div className="grid grid-cols-1 gap-3">
+              <div className="flex items-center">
+                <ul className="items-center gap-10">
                   <li>Home</li>
                   <li>About</li>
                   <li>Contact us</li>
@@ -85,15 +76,11 @@ const Footer = () => {
               <FaTelegram className="text-3xl hover:scale-105 duration-300" />
               <FaGoogle className="text-3xl hover:scale-105 duration-300" />
             </div>
-            <div className="space-y-2">
-              <p>Payment Methods</p>
-              <img src={CardsImg} alt="" />
-            </div>
           </motion.div>
         </div>
         {/* copyright section */}
         <p className="text-center mt-8 border-t-2 border-white/40 pt-8">
-          Copyright &copy; 2024. All Rights Reserved
+          Copyright &copy; 2025. All Rights Reserved
         </p>
       </div>
     </footer>

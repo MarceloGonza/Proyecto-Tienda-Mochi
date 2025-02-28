@@ -24,9 +24,9 @@ const AllProducts = () => {
                   {item.title}
                 </h1>
                 <p className="text-center text-sm text-gray-600">{item.desc}</p>
-                <button className="!mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white duration-200">
-                  Buy Now
-                </button>
+                <div className="!mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md">
+                  $ 4.000
+                </div>
               </div>
             </div>
           ))}

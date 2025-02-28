@@ -26,7 +26,6 @@ const App = () => {
                 <Products />
                 <Banner />
                 <BannerText />
-                <Blogs />
                 <FAQ />
                 <Footer />
               </>
