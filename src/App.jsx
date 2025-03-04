@@ -8,6 +8,7 @@ import Blogs from "./components/Blogs/Blogs";
 import FAQ from "./components/FAQ/FAQ";
 import AllProducts from "./components/AllProducts";
 import Footer from "./components/Footer/Footer";
+import Map from "./components/Map";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
                 <Banner />
                 <BannerText />
                 <FAQ />
+                <Map />
                 <Footer />
               </>
             }
