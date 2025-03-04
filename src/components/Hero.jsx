@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import Fanta1 from "../assets/fanta1.png";
-import Fanta2 from "../assets/fanta2.png";
-import Fanta3 from "../assets/fanta3.png";
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
@@ -38,33 +38,30 @@ const SlideRight = (delay) => {
 const headphoneData = [
   {
     id: 1,
-    image: Fanta1,
-    title: "Orange Fanta",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
+    image: img1,
+    title: "Mochis Bamboo House",
+    subtitle: "MOCHIS BAMBOO HOUSE SABOR TARO ÑAME(GLUTEN FREE) 210 GR",
     price: "$40",
-    modal: "Orange",
-    bgColor: "#cf4f00",
+    modal: "TARO",
+    bgColor: "#2CA880",
   },
   {
     id: 2,
-    image: Fanta2,
-    title: "Cola Zero",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
+    image: img2,
+    title: "Sake Chrysanthemum Mark",
+    subtitle: "Sake a base de arroz puro Chrysanthemum Mark Taiwan 180 ml",
     price: "$100",
-    modal: "Zero",
-    bgColor: "#727272",
+    modal: "ARROZ",
+    bgColor: "#008d62",
   },
   {
     id: 3,
-    image: Fanta3,
-    title: "Coca Cola",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos iusto minima ad ut id eos ad ut id eos",
+    image: img3,
+    title: "Soju Chum Churum",
+    subtitle: "Soju sabor frutilla Chum Churum 360 ml",
     price: "$100",
-    modal: "Cola",
-    bgColor: "#ac1a00",
+    modal: "STRAWBERRY",
+    bgColor: "#006d46",
   },
 ];
 const Hero = () => {
@@ -222,7 +219,7 @@ const Hero = () => {
           </div>
 
           {/* ______ Hero Image ______ */}
-          <div className="flex flex-col justify-end items-center relative order-1 md:order-2 ">
+          <div className="flex flex-col items-center justify-center relative order-1 md:order-2 ">
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeData.id}

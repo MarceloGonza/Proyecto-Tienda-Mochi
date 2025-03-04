@@ -1,7 +1,7 @@
 import React from "react";
-import P1 from "../../assets/fanta1.png";
-import P2 from "../../assets/fanta2.png";
-import P3 from "../../assets/fanta3.png";
+import P1 from "../../assets/img1.png";
+import P2 from "../../assets/img2.png";
+import P3 from "../../assets/img3.png";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 

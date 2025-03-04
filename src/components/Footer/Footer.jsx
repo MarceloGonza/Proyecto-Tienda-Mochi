@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary pt-12 pb-8 text-white">
+    <footer className="bg-primary pt-20 pb-8 text-white">
       <div className="container">
         {/* Contenedor principal alineado con justify-between */}
         <div className="flex flex-col sm:flex-row justify-evenly items-center gap-8">
@@ -28,7 +28,7 @@ const Footer = () => {
             <img
               src={Logo}
               alt="Logo"
-              className="max-w-[100px] invert mx-auto sm:mx-0"
+              className="w-14 h-auto mx-auto sm:mx-0"
             />
             <div>
               <p className="flex items-center gap-2 justify-center sm:justify-start">
