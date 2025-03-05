@@ -1,4 +1,4 @@
-import BannerImg from "../../assets/Banner/juice.png";
+import BannerImg from "../../assets/img2.png";
 import Splash from "../../assets/Banner/splash.png";
 import { motion } from "framer-motion";
 import { fadeUp } from "../../components/Products/Products";

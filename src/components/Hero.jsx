@@ -42,8 +42,9 @@ const headphoneData = [
     title: "Mochis Bamboo House",
     subtitle: "MOCHIS BAMBOO HOUSE SABOR TARO ÑAME(GLUTEN FREE) 210 GR",
     price: "$40",
+    priceDesco: "$60",
     modal: "TARO",
-    bgColor: "#2CA880",
+    bgColor: "#D98A7E",
   },
   {
     id: 2,
@@ -51,8 +52,9 @@ const headphoneData = [
     title: "Sake Chrysanthemum Mark",
     subtitle: "Sake a base de arroz puro Chrysanthemum Mark Taiwan 180 ml",
     price: "$100",
+    priceDesco: "$120",
     modal: "ARROZ",
-    bgColor: "#008d62",
+    bgColor: "#E5989B",
   },
   {
     id: 3,
@@ -60,8 +62,9 @@ const headphoneData = [
     title: "Soju Chum Churum",
     subtitle: "Soju sabor frutilla Chum Churum 360 ml",
     price: "$100",
+    priceDesco: "$120",
     modal: "STRAWBERRY",
-    bgColor: "#006d46",
+    bgColor: "#B5828C",
   },
 ];
 const Hero = () => {
@@ -203,7 +206,7 @@ const Hero = () => {
                         </div>
                         <div className="!mt-6 space-y-1 text-center">
                           <p className="text-base line-through opacity-50">
-                            {item.price}
+                            {item.priceDesco}
                           </p>
                           <p className="text-xl font-bold">{item.price}</p>
                           {/* <p className="text-xs font-normal text-nowrap">
@@ -261,8 +264,12 @@ const Hero = () => {
             </AnimatePresence>
           </div>
           {/* ______ WhatsApp Icon ______ */}
-          <div className="text-3xl text-white fixed bottom-10 right-10 hover:rotate-[360deg] duration-500 z-[99999] mix-blend-difference">
-            <a href="">
+          <div className="text-3xl text-green-600 fixed bottom-10 right-10 hover:rotate-[360deg] duration-500 z-[99999]">
+            <a
+              href="https://wa.me/5492624492157"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp />
             </a>
           </div>

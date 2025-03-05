@@ -25,22 +25,22 @@ export const fadeUp = (delay) => {
 export const ProductsData = [
   {
     id: 1,
-    title: "Orange Fanta",
+    title: "Mochis Bamboo House",
     image: P1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ",
+    desc: "MOCHIS BAMBOO HOUSE SABOR TARO ÑAME(GLUTEN FREE) 210 GR",
     delay: 0.5,
   },
   {
     id: 2,
-    title: "Lemon Fanta",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ",
+    title: "Sake Chrysanthemum Mark",
+    desc: "Sake a base de arroz puro Chrysanthemum Mark Taiwan 180 ml",
     image: P2,
     delay: 0.8,
   },
   {
     id: 3,
-    title: "Cola Zero",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima",
+    title: "Soju Chum Churum",
+    desc: "Soju sabor frutilla Chum Churum 360 ml",
     image: P3,
     delay: 1.1,
   },
@@ -56,7 +56,7 @@ export const ProductsData = [
     title: "Orange Fanta",
     image: P1,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ",
-    delay: 0.5,
+    delay: 1.1,
   },
 ];
 

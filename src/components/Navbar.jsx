@@ -42,7 +42,7 @@ const Navbar = () => {
       >
         {/* logo section */}
         <div>
-          <img src={Logo} alt="" className="w-14 h-auto" />
+          <img src={Logo} alt="" className="w-16 h-auto" />
         </div>
         {/* Menu section */}
         <div className="hidden sm:hidden">
